@@ -1,91 +1,117 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: ask_required_documents_for_sale
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - What paperwork is needed to sell my car?
+    - What documents are required for a vehicle sale?
+    - Which documents do I need to sell a car?
+    - Do I need any specific papers to sell my car?
+    - What do I need to prepare to sell my vehicle?
+    - What kind of documentation is required to complete a car sale?
+    - Can you tell me the documents I need to sell my vehicle?
+    - What are the legal papers required to sell a car?
+    - Is there a list of documents I need to sell my car?
+    - What should I have ready before selling my car?
+    - Which papers should I bring to sell a car?
+    - What paperwork do I need to complete a car sale?
+    - Are there any required forms to sell a vehicle?
+    - What documents will the buyer ask for?
+    - What papers do I hand over when selling a car?
+    - What documentation should I prepare for a car sale?
+    - Do I need to submit any forms to sell my vehicle?
+    - What kind of documents are needed to transfer car ownership?
+    - What do I need to provide to sell my used car?
+    - What are the necessary documents for car ownership transfer?
 
-- intent: goodbye
+- intent: ask_ownership_transfer_duration
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - How much time does it take to transfer car ownership?
+    - What’s the duration of the ownership transfer process?
+    - How long will it take to complete the ownership change?
+    - How many days does it take to transfer ownership?
+    - When will the car ownership be officially transferred?
+    - How soon will the ownership transfer be completed?
+    - What's the waiting time for ownership transfer?
+    - Is the ownership transfer immediate?
+    - Does ownership transfer take a long time?
+    - Can you tell me the time needed for a vehicle ownership change?
+    - How fast is the car ownership transfer process?
+    - How long until the ownership is updated in the system?
+    - What is the processing time for changing car ownership?
+    - Will the ownership transfer happen the same day?
+    - Is the transfer of ownership quick or does it take days?
+    - When will I become the legal owner after the transfer?
+    - What’s the timeline for the ownership change?
+    - Does it take weeks to transfer car ownership?
+    - How long after purchase does the ownership transfer complete?
+    - Is there a delay in transferring ownership?
 
-- intent: affirm
+- intent: ask_selling_costs
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - What fees do I need to pay when selling my car?
+    - Are there any costs involved in selling a used car?
+    - How much does it cost to sell a car?
+    - What are the charges for selling a vehicle?
+    - Do I need to pay anything when I sell my car?
+    - Are there any hidden fees in the car selling process?
+    - What expenses should I expect when selling a car?
+    - Is there a fee for transferring ownership when I sell my car?
+    - What selling costs should I be aware of?
+    - How much will I spend to complete a car sale?
+    - Are there taxes or fees for selling a used car?
+    - Do I need to pay registration fees when selling my vehicle?
+    - What are the financial requirements for selling a car?
+    - What kind of charges apply when selling a used vehicle?
+    - Is there a government fee when I sell my car?
+    - How much is the ownership transfer fee for the seller?
+    - What paperwork fees should I prepare for when selling?
+    - Does the seller pay any part of the transfer fee?
+    - Are there any administrative costs in selling a car?
+    - What are the total costs involved in selling a used car?
 
-- intent: deny
+- intent: ask_vehicle_history_report
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - How can I get a report on the car’s history?
+    - Is a vehicle history report available?
+    - Can I check the car’s history before buying?
+    - Where can I get the vehicle history?
+    - Can I see the history of this used car?
+    - Is it possible to get a car history report?
+    - How do I access a vehicle's history?
+    - Can I download a report about the car’s past?
+    - Do you provide vehicle history reports?
+    - How do I get details about the car’s previous ownership?
+    - Can I find out if the car has been in accidents?
+    - Is there a way to see service records and past ownership?
+    - Can I get a detailed history of the used car?
+    - How do I check the background of a vehicle?
+    - Is there a vehicle check report available?
+    - Where can I see the full history of the car?
+    - Does this car have a maintenance or accident history report?
+    - Can I view the car’s report before purchase?
+    - Are vehicle history checks provided here?
+    - How can I find out if the car was ever in an accident?
 
-- intent: mood_great
+- intent: ask_service_records_availability
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Can I see the car's service history?
+    - Are maintenance records available for this vehicle?
+    - Do you have the car’s service documents?
+    - Is the service history included?
+    - Has the car been regularly maintained?
+    - Are past service records available?
+    - Can I check the vehicle’s maintenance history?
+    - Do you provide service logs for the car?
+    - Is there a record of repairs or servicing?
+    - Can I view the maintenance report?
+    - Are the repair and service records accessible?
+    - Was the vehicle serviced regularly?
+    - Do you have documents showing past car services?
+    - Is there proof of regular maintenance?
+    - Can I get a copy of the car’s service history?
+    - Are there any logs of previous maintenance?
+    - Has the vehicle undergone any major repairs?
+    - Is there any documentation of the vehicle’s service?
+    - Does the owner have service records to share?
+    - Can I review how often the car was serviced?

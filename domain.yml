@@ -1,33 +1,27 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - ask_required_documents_for_sale
+  - ask_ownership_transfer_duration
+  - ask_selling_costs
+  - ask_vehicle_history_report
+  - ask_service_records_availability
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_ask_required_documents_for_sale:
+  - text: "To sell your car, you typically need the vehicle registration certificate, your personal ID, the signed sale agreement, and sometimes a roadworthiness certificate. Depending on your location, additional documents like tax clearance or emission certificates may also be required."
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_ask_ownership_transfer_duration:
+  - text: "The ownership transfer process usually takes between 2 to 7 working days, depending on the local authority and whether all documents are in order. In some cases, it can be faster if done digitally."
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_ask_selling_costs:
+  - text: "Selling a used car may involve costs such as ownership transfer fees, administrative charges, and possibly advertising or listing fees if you sell online. These costs vary by location, so it’s good to check with your local transport authority."
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_ask_vehicle_history_report:
+  - text: "Yes, a vehicle history report is usually available. It provides details about previous ownership, accident history, mileage, and more. You can request one from official sources or third-party providers — some platforms also include it for free with listings."
 
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_ask_service_records_availability:
+  - text: "If the previous owner kept records, service and maintenance history should be available. This can include receipts, dealership service logs, and repair documentation. Always ask for these when considering a used car — they provide useful insights into the vehicle's condition."
 
 session_config:
   session_expiration_time: 60

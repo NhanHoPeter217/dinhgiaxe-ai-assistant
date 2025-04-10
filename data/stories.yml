@@ -1,29 +1,53 @@
 version: "3.1"
 
 stories:
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: ask required documents for sale
+    steps:
+    - intent: ask_required_documents_for_sale
+    - action: utter_ask_required_documents_for_sale
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: ask ownership transfer duration
+    steps:
+    - intent: ask_ownership_transfer_duration
+    - action: utter_ask_ownership_transfer_duration
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: ask selling costs
+    steps:
+    - intent: ask_selling_costs
+    - action: utter_ask_selling_costs
+
+  - story: ask vehicle history report
+    steps:
+    - intent: ask_vehicle_history_report
+    - action: utter_ask_vehicle_history_report
+
+  - story: ask service records availability
+    steps:
+    - intent: ask_service_records_availability
+    - action: utter_ask_service_records_availability
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
