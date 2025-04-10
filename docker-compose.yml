@@ -1,0 +1,17 @@
+version: "3.1"
+
+services:
+  rasa:
+    build: .
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./:/dinhgiaxe-ai-assistant
+    depends_on:
+      - action_server
+
+  action_server:
+    build:
+      context: ./actions
+    ports:
+      - "5055:5055"
