@@ -29,3 +29,17 @@ Check that Rasa was installed successfully:
 ```bash
 rasa --version
 ```
+## 🧠 Train Assistant
+
+Once everything is installed, you can train your Rasa assistant with:
+
+```bash
+rasa train
+```
+## 💬 Test Your Assistant Locally
+
+To chat with your assistant via the command line:
+
+```bash
+rasa shell
+```
